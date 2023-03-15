@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="register.css">
+    <nav>
+      <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="login">Sign-In</a></li>
+      </ul>
+    </nav>
+  </head>
+  <body>
+    <div class="signup-form">
+      <h1>Sign Up</h1>
+      <form id="register" method="post">
+        <label for="name">First Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <button type="submit" id="submit">Sign Up</button>
+        <div id="result" class="result">
+          <p><%= locals.error %></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
